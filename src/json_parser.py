@@ -61,7 +61,6 @@ class Parser:
                 # Add open mark on stack
                 if self.is_open_mark(mark):
                     self.marks_stack.append(mark)
-
                 # Remove mark from stack
                 elif self.is_close_mark(mark):
                     if recent_mark == ',':
