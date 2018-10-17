@@ -32,7 +32,6 @@ class Parser:
         self.open_file()
 
         for idx, line in enumerate(self.file):
-            print(line)
             for mark in line:
                 # Ignore white spaces
                 if mark.isspace():
@@ -98,7 +97,7 @@ class Parser:
                 return
 
         # If everything ok
-        print('Good json file')
+        print('RESULT: Good json file')
         return 'OK'
 
 
