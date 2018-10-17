@@ -93,6 +93,9 @@ class Parser:
             except SyntaxError as se:
                 print('SyntaxError: Invalid syntax in line {} at position {}'.format(se.lineno, se.offset))
                 return
+            except ValueError as ve:
+                print('SyntaxError: Value Error', repr(ve))
+                return
 
         # If everything ok
         print('Good json file')
